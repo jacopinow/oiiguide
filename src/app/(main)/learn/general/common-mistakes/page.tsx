@@ -1,0 +1,30 @@
+type Props = {
+  params: { level: string; topic: string };
+};
+
+// TODO: Fetch and display actual content for this topic from USACO Guide
+// This is a placeholder for the "Common Mistakes" page under the General section.
+
+export async function generateMetadata({ params }: Props) {
+  return {
+    title: `Common Mistakes - General - USACO Prep`,
+  };
+}
+
+export default function CommonMistakesPage({ params }: Props) {
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-4">Common Mistakes (General)</h1>
+      <p className="mb-4">
+        This page will contain the content from the USACO Guide section on "Common Mistakes".
+        The content will be fetched and integrated here.
+      </p>
+      <div className="prose dark:prose-invert max-w-none">
+        {/* Content from USACO Guide will be rendered here */}
+        <p>USACO Guide Link: <a href="https://usaco.guide/general/common-mistakes" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">https://usaco.guide/general/common-mistakes</a></p>
+        <p><i>Content integration in progress...</i></p>
+      </div>
+    </div>
+  );
+}
+
