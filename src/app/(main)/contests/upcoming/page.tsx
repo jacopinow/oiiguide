@@ -1,5 +1,5 @@
 import React from 'react';
-import { fetchUpcomingContests } from '@/lib/api/contests';
+import { fetchUpcomingContests } from './lib/api/contests.js';
 
 // Componente per la pagina dei contest imminenti
 export default async function UpcomingContestsPage() {
@@ -9,7 +9,6 @@ export default async function UpcomingContestsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6 text-center">Contest Imminenti</h1>
-      
       <div className="grid gap-6 md:grid-cols-2">
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold mb-4 text-blue-600 dark:text-blue-400">Codeforces</h2>

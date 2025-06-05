@@ -1,4 +1,4 @@
-"[use client]";
+"use client";
 
 import { useState, useEffect } from 'react';
 import { FaCalendarAlt, FaExternalLinkAlt, FaLightbulb, FaExclamationTriangle, FaCheckCircle } from 'react-icons/fa';

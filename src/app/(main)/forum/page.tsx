@@ -1,5 +1,5 @@
-"[use client]";
-
+"use client";
+import { useParams } from "next/navigation";
 import Link from 'next/link';
 
 // Dati di esempio per le categorie del forum (da sostituire con dati da API/DB)
