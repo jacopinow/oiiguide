@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  swcMinify: true,
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -8,11 +9,10 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   experimental: {
-    // Aggiungi questa sezione
-    
-    esmExternals: 'loose',
-    outputFileTracingRoot: process.cwd(),
-  }
+    outputFileTracingRoot: __dirname,
+  },
+  output: "standalone",
+  distDir: ".vercel/output/static"
 }
 
 module.exports = nextConfig
