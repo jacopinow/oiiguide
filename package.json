@@ -7,8 +7,7 @@
   "build": "next build || exit 0",
   "build:vercel": "mkdir -p .next && echo '{\"redirects\":[],\"rewrites\":[],\"headers\":[],\"dynamicRoutes\":[]}' > .next/routes-manifest.json && next build",
   "start": "next start",
-  "lint": "next lint",
-
+  "lint": "next lint"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
